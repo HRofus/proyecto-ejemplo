@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Registro</title>
+  
+  <style>
+    body {
+      background-color: rgb(114, 34, 189);
+    }
+    footer {
+    overflow-x: hidden; 
+    background-color:  rgb(114, 34, 189); 
+    color: #ffffff; 
+    padding: 20px 0; 
+  }
+
+  .footer-text {
+    text-align: center; 
+  }
+  </style>
+</head>
+<body>
+    <!--cabeza-->
+     <!--cabecera -->
+     <section class="cabecera">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="nav">
+            <div class="container-fluid" style="background-color: #480161c4;">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">
+                    <img src="img/logowhite.png" alt="" width="150">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                arira-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: rgba(97, 1, 157, 0.956);">
+                                <li><a class="dropdown-item"style="background-color: rgba(97, 1, 157, 0.956);" href="http://127.0.0.1:5500/historia/historia.html">Orígenes</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn d-sm-none" style="background-color: #230046;" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
+
+        <div class="offcanvas offcanvas-start text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header" style="background-color: rgba(97, 1, 157, 0.956);" >
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="background-color: rgba(97, 1, 157, 0.956);">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            arira-expanded="false">
+                            Historia
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: rgba(97, 1, 157, 0.956);">
+                            <li><a class="dropdown-item"style="background-color: rgba(97, 1, 157, 0.956);" href="http://127.0.0.1:5500/historia/historia.html">Orígenes</a></li>
+                            <li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            </div>
+        </nav>
+
+        </div>
+    </section>
+
+
+
+    <section id="ini">
+        <div class="espacio" style="height: 200px;">
+        </div>
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="card" style="background-color: rgb(29, 0, 57);">
+                  <div class="card-body rounded" style="background-color: rgb(52, 0, 67);">
+                    <h5 class="card-title text-center text-white">Registro</h5>
+                    <form class="text-white" style="background-color: rgb(52, 0, 67);">
+                      <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" required>
+                      </div>
+                      <div class="form-group pb-2">
+                        <label for="pais" >País</label>
+                        <select class="form-control" id="pais" required>
+                          <option value="">Selecciona un país</option>
+                          <option value="argentina">Argentina</option>
+                          <option value="brasil">Brasil</option>
+                          <option value="chile">Chile</option>
+                          <option value="colombia">Colombia</option>
+                          <option value="mexico">México</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-block text-white" style="background-color: rgb(22, 0, 43);">Registrarse</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+ <!--Footer-->
+    <footer class="footer" >
+        <div class="container-fluid">
+            <div class="col">
+                <div class="imgcompleto" style="width: 100%;" >
+                    <img src="img/dulcemora.png" class="img-fluid w-100"  alt="">
+                </div>
+            </div>
+            <div class="footer-text" style="background-color: #2b0347;">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <p class="p1">
+                            Siguenos en nuestras redes:
+                        </p>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                        <p class="p1">
+                            Mas información
+                        </p>
+                        <p class="p1">
+                            Mas preguntas 
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="p1">
+                            Empresas asociadas:
+                        </p>
+                        <p class="p1">
+                            Milk
+                        </p>
+                        <p class="p1">
+                            Cebo
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="p1">
+                            Apoyanos
+                        </p>
+                        <p class="p1">
+                            Suscribete
+                        </p>
+                        <p class="p1">
+                            Visítenos
+                        </p>
+                    </div>
+                </div>
+            <p>&copy; Derechos Reservados</p>
+            <p>Autor: Rafael Bilbao Mallea</p>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.card {
+    position: relative;
+    /*controla el posicionamiento de un elemento*/
+    width: 230px;
+    height: 200px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /*nackface visibility controla que la aprte trasera de un elemento sea visible o no mientras que hidden es un modo de ocualtar contenido en la pagina aun este estara ahi pero no sera visible a simple vista*/
+    border-radius: 10px;
+    overflow: hidden;
+    /*recorta el contenido en base a su contenedor y este no sera visible*/
+    transition: .5s;
+    /*especifica una transicion suave de un cambio de estado del elemento seleccionado  en este caso es de 0.5 segundos para todas las propiedades que cambien en la clase*/
+    margin-bottom: 200px;
+}
+
+.card .front {
+    background-color: rgb(8, 0, 55);
+    transform: perspective(600px) rotateY(0deg);
+    /*esta propiedad hace que un elemento se transforme en este caso perpective establece la perspectiva bajo la cual veremos los elementos  en un espacio tridimencional en caso que se convierta en 3D y rotate Y se utiliza para rotar un elemento  alrededor del eje Y*/
+    box-shadow: 0 5px 10px #000;
+    /*agrega sombra a los elementos que este seleccionando*/
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    /*esta propiedad hace que un elemento se transforme en este caso perpective establece la perspectiva bajo la cual veremos los elementos  en un espacio tridimencional en caso que se convierta en 3D y rotate Y se utiliza para rotar un elemento  alrededor del eje Y*/
+    background: rgb(1, 0, 37);
+    padding:0;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*equilibra la distribucion de contenido segun el espacio disponible*/
+    box-shadow: 0 5px 10px #000;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+.vh-100 {
+    min-height: 100vh;
+  }
+  footer {
+    overflow-x: hidden; 
+    background-color: rgb(52, 54, 208); 
+    color: #ffffff; 
+    padding: 20px 0; 
+  }
+
+  .footer-text {
+    text-align: center; 
+  }

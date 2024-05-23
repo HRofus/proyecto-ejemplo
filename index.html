@@ -1,47 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonch's</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilosmain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/main.css">
 </head>
+
 <body>
     <!--cabecera -->
-    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: #242f66;" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo B.png" alt="" width="200">
-            </a>
+    <section class="cabecera">
+        <nav class="navbar navbar-expand-sm navbar-light" id="nav">
+            <div class="container-fluid" style="background-color: #ffbd16c4;">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/index.html#">
+                    <img src="img/logobrown.png" alt="" width="150">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pro">Productos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                arira-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: rgba(255, 244, 96, 0.956);">
+                                <li><a class="dropdown-item"style="background-color: rgba(255, 244, 96, 0.956);" href="historia/historia.html">Orígenes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"style="background-color: rgba(255, 244, 96, 0.956);" href="#vis">Visión</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Unirse
+                            </a>
+                            <ul class="dropdown-menu bg-warning">
+                                <li><a class="dropdown-item bg-warning" href="registro/registro.html">Registrarte</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn d-sm-none" style="background-color: #361300;" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
 
-            <button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"    
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>   
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+        <div class="offcanvas offcanvas-start text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header" style="background-color: rgba(255, 244, 96, 0.956);" >
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="background-color: rgba(255, 244, 96, 0.956);">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Historia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Registrate</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio de sesion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pro">Productos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            arira-expanded="false">
+                            Historia
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: rgba(255, 244, 96, 0.956);">
+                            <li><a class="dropdown-item"style="background-color: rgba(255, 244, 96, 0.956);" href="historia/historia.html">Orígenes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"style="background-color: rgba(255, 244, 96, 0.956);" href="#vis">Visión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Unirse
+                        </a>
+                        <ul class="dropdown-menu"style="background-color: rgba(255, 244, 96, 0.956);">
+                            <li><a class="dropdown-item" style="background-color: rgba(255, 244, 96, 0.956);" href="registro/registro.html">Registrarte</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    
-    
-    
-    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+            </div>
+        </nav>
+    </section>
+    <!--Bienvenida-->
+
+    <section class="Bienvenida" style="background-color: rgb(255, 245, 237);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="img-container">
+                        <img src="img/bienvenida.png" class="img-fluid rounded mw-120 mh-120"
+                            alt="imagen de bienvenida">
+                    </div>
+                    <h1 class="mt-3 display-4 display-md-3 display-lg-2">Bienvenido a Bonch's</h1>
+                    <p class="lead text-responsive men men1">Bienvenido a nuestra tienda virtual donde encontrará una
+                        gran variedad de
+                        chocolates y caramelos tambíen.
+                        Disfrute de nuestros deliciosos sabores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Producto Populres-->
+    <section class="productos pt-5" id="pro" style="background-color: rgb(253, 239, 218);">
+        <div class="tit">
+            <h2 class="text-center">
+                Productos populares
+            </h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-lg-3 mb-4 col-sm-11">
+                            <div class="product-item">
+                                <img src="img/negro.png" alt="Producto 1" class="img-fluid product-img mx-auto d-block">
+                                <div class="product-info text-center">
+                                    <p class="men">El cacao es rico en magnesio y hierro y en menor medida también
+                                        contiene calcio,
+                                        fosforo, magnesio, potasio y zinc. Además contiene vitamina A, vitaminaB1,
+                                        vitamina B2, Vitamina B, y vitamina C y E.</p>
+                                    <button class="button bg-primary">comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 mb-4 col-sm-12">
+                            <div class="product-item">
+                                <img src="img/blanco.png" alt="Producto 2" class="img-fluid product-img mx-auto d-block"
+                                    width="130">
+                                <div class="product-info text-center">
+                                    <p class="men">Posee vitamina A, hierro, potasio, magnesio y zinc. Es un alimento
+                                        rico en
+                                        calcio, por 100 gramos 270 miligramos son calcio. Debido a su alta cantidad de
+                                        calorías, no es recomendable para personas diabéticas.</p>
+                                    <button class="button bg-primary">comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-sm-11">
+                            <div class="product-item text-center">
+                                <img src="img/bombones.png" alt="Producto 3"
+                                    class="img-fluid product-img mx-auto d-block" height="30%">
+                                <div class="product-info">
+                                    <p class="men">66 gramos de carbohidratos, 21,20 gramos de
+                                        grasa y 66 gramos de azúcar por cada 100 gramos, aportando 476 calorias a la
+                                        dieta. Entre sus nutrientes también se encuentran las vitaminas K, A, B9 y B3.
+                                        Además de estas propiedades, los bombones contienen potasio.</p>
+                                    <button class="button bg-primary">comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-sm-11">
+                            <div class="product-item text-center">
+                                <img src="img/conejos.png" alt="Producto 4"
+                                    class="img-fluid product-img mx-auto d-block">
+                                <div class="product-info">
+                                    <p class="men">Contiene 9,19 gramos de proteínas, 54,10 gramos de carbohidratos,
+                                        31,50 gramos de grasa y 54,10 gramos de azúcar por cada 100 gramos. Aporta
+                                        vitaminas K, A, B7 y B3, y minerales como el potasio y el calcio, pues 100 g. de
+                                        este alimento contienen 247 mg. de calcio.</p>
+                                    <button class="button bg-primary">comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="product-item text-center">
+                                <img src="img/pastel.png" alt="Producto 5"
+                                    class="img-fluid product-img mx-auto d-block">
+                                <div class="product-info">
+                                    <p class="men">Harina de trigo, azúcar, cacao en polvo, huevos, leche entre
+                                        otros. Alto contenido en calorías.
+                                    </p>
+                                    <button class="button bg-primary">comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--historia-->
+    <section class="histo pt-4" style="background-color: rgb(253, 239, 218);">
+        <div class="Historia">
+            <div class="titu">
+                <h2 class="text-center">
+                    Conocenos
+                </h2>
+            </div>
+            <div class="container3">
+                <div class="row">
+                    <div class="contenedortext text-center col-md-6  rounded my-2
+                     " style="background-color: rgb(255, 195, 135);">
+                        <p class="lead text-responsive fs-6 pt-1 men">
+                            El inicio de Bonch's se remonta a la antigua época del año 1910, Año donde un joven
+                            aventurero llegó a las costas de los Estados Unidos en busca nuevas oportunidades.
+                            Mientras trabajaba de barrendero encontró un pedazo de chocolate abandonado encima de un
+                            asiento de espera.
+                            Al probarlo se le generaron ideas para mejorar el comestible, y así nace un nuevo
+                            chocolatero.
+                        </p>
+                        <a href="historia.html" class="btn text-white" style="background-color: rgb(88, 44, 0);">Leer
+                            más</a>
+                    </div>
+                    <div class="col-md-6 mx-auto my-2">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/cacao.jpg" class="d-block w-100 " alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/antiguo.jpg" class="d-block w-100 " height="234px" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/polvo.jpg" class="d-block w-100" height="234px" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--vision-->
+    <section class="vision pt-5" id="vis" style="background-color: rgb(253, 239, 218);">
+        <div class="vis">
+            <div class="titu">
+                <h2 class="text-center">
+                    Nuestra Vision
+                </h2>
+            </div>
+            <div class="container4 p-0">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 d-none d-md-block">
+                        <p class="lead text-responsive text-center men2">
+                            Mediante esta presentación queremos mostrar nuestra visión.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 d-md-none text-center">
+                        <div class="aux">
+                            <p class="text-center men2">
+                                A continuación presentamos nuestra visión:
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-container">
+                                <h3 class="text-center">Endulzar la vida de los demás.</h3>
+                                <p class="text-center men2">Alegrar con nuestras creaciones los días de nuestros
+                                    consumidores.</p>
+                            </div>
+                            <div>
+                                <img src="img/separador.png" class="img-fluid w-100 p-0" height="10" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-container">
+                                <h3 class="text-center">Expandir nuestro mundo de sueños.</h3>
+                                <p class="text-center men2">Alcanzar nuevos lugares misteriosos para llevar la alegría a
+                                    todos.</p>
+                            </div>
+                            <div>
+                                <img src="img/separador.png" class="img-fluid w-100 p-0" height="10" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-container">
+                                    <h3 class="text-center">Mejorar e Innovar nuestros sabores.</h3>
+                                    <p class="text-center men2">No nos queraremos descontinuados, no mientras la llama
+                                        de la imaginación esté encendida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/liquido.jpg" class="d-block w-100" height="350" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                            <h2 class="text-white men5">Endulazar la vida de los demás.</h>
+                                <p class="text-white men3">Alegrar con nuestras creaciones los días de nuestros
+                                    consumidores</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/caramelos.jpg" class="d-block w-100" height="350" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                            <h2 class="text-white me5">Expandir nuestro mundo de sueños.</h2>
+                            <p class="text-white men3">Alcanzar nuevos lugares misteriosos para llevar la alegría a
+                                todos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/masas.jpg" class="d-block w-100" height="350" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                            <h2 class="text-white me5">Mejorar e Innovar nuestros sabores.</h2>
+                            <p class="text-white men3">No nos queraremos descontinuados, no mientras la llama de la
+                                imaginación esté encendida.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="col">
+                <div class="imgcompleto" style="width: 100%;">
+                    <img src="img/lago1.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+            <div class="footer-text" style="background-color: #361300;">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <p class="p1">
+                            Siguenos en nuestras redes:
+                        </p>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <p class="p1">
+                            Mas información
+                        </p>
+                        <p class="p1">
+                            Mas preguntas
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="p1">
+                            Empresas asociadas:
+                        </p>
+                        <p class="p1">
+                            Milk
+                        </p>
+                        <p class="p1">
+                            Cebo
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="p1">
+                            Apoyanos
+                        </p>
+                        <p class="p1">
+                            Suscribete
+                        </p>
+                        <p class="p1">
+                            Visítenos
+                        </p>
+                    </div>
+                </div>
+                <p>&copy; Derechos Reservados</p>
+                <p>Autor: Rafael Bilbao Mallea</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
