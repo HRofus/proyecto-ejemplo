@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilosf.css">
+  <title>Registro</title>
+  
+</head>
+<body>
+    <!--cabeza-->
+     <!--cabecera -->
+     <section class="cabecera">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="nav">
+            <div class="container-fluid" style="background-color: #480161c4;">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">
+                    <img src="img/logowhite.png" alt="" width="150">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                arira-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" style="background-color: rgba(97, 1, 157, 0.956);">
+                                <li><a class="dropdown-item"style="background-color: rgba(97, 1, 157, 0.956);" href="historia.html">Orígenes</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn d-sm-none" style="background-color: #230046;" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
+
+        <div class="offcanvas offcanvas-start text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header" style="background-color: rgba(97, 1, 157, 0.956);" >
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="background-color: rgba(97, 1, 157, 0.956);">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            arira-expanded="false">
+                            Historia
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: rgba(97, 1, 157, 0.956);">
+                            <li><a class="dropdown-item"style="background-color: rgba(97, 1, 157, 0.956);" href="historia.html">Orígenes</a></li>
+                            <li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            </div>
+        </nav>
+
+        </div>
+    </section>
+    <!--registro-->
+    <section id="ini">
+        <div class="espacio" style="height: 200px;">
+        </div>
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 w-50" >
+                <div class="card"  style="background-color: rgb(29, 0, 57);">
+                  <div class="card-body rounded" style="background-color: rgb(52, 0, 67);">
+                    <h5 class="card-title text-center text-white">Registro</h5>
+                    <form class="text-white" style="background-color: rgb(52, 0, 67);">
+                      <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" required>
+                      </div>
+                      <div class="form-group pb-2">
+                        <label for="pais" >País</label>
+                        <select class="form-control" id="pais" required>
+                          <option value="">Selecciona un país</option>
+                          <option value="argentina">Argentina</option>
+                          <option value="brasil">Brasil</option>
+                          <option value="chile">Chile</option>
+                          <option value="colombia">Colombia</option>
+                          <option value="mexico">México</option>
+                          <option value="bolivia">Bolivia</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-block text-white" style="background-color: rgb(22, 0, 43);">Registrarse</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <br>
+    
+<!-- Footer -->
+<footer class="footer" style="background-color: #260047;">
+    <div class="container-fluid" >
+        <div class="row justify-content-center">
+            <!-- Columna del logo y redes sociales -->
+            <div class="col-md-3 text-center">
+                <div class="imgcompleto mb-3">
+                    <img src="img/logowhite.png" class="img-fluid" alt="Logo" style="width: 100px;">
+                </div>
+                <div class="redes-sociales">
+                    <i class="fab fa-facebook-f mx-2"></i>
+                    <i class="fab fa-twitter mx-2"></i>
+                    <i class="fab fa-instagram mx-2"></i>
+                </div>
+            </div>
+            <!-- Columna de créditos de la empresa -->
+            <div class="col-md-3 text-center">
+                <p class="p1">Empresa de Chocolates Bonch's</p>
+                <p class="p1">Asociados con Delta</p>
+                <p class="p1">Autor: Rafael Bilbao Mallea</p>
+                <p class="p1 mb-2">© Derechos Reservados</p>
+                
+            </div>
+            <!-- Columna de contacto -->
+            <div class="col-md-3 text-center">
+                <p class="p1 mb-2">Contáctanos:</p>
+                <p class="p1">ChocolatesBonchs@gmail.com</p>
+                <p class="p1 mt-3">
+                    <a href="historia.html" class="suscribete-link"><i class="fas fa-book"></i></a>
+                     Conozcanos
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

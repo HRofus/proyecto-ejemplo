@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(255, 245, 237);;
+}
 @font-face{
     font-family: 'Poetsen One';
     src: url('/OFL.txt')format('txt');
@@ -52,32 +55,65 @@
 .men5{
   font-family: 'Times New Roman', Times, serif;
 }
-.product-item {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
+/* Welcome Section */
+.Bienvenida {
+  padding: 60px 0;
+  text-align: center;
 }
 
-.product-img {
+.Bienvenida .img-container {
   max-width: 100%;
   height: auto;
-  max-height: 500px; /* Ajusta este valor según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bien{
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.product-item:hover .product-img {
-  transform: scale(1.1);
+/* Historia Section */
+.carousel-item img {
+  object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .histo .row {
+      flex-direction: column;
+      text-align: center;
+  }
+  .contenedortext, .carousel-inner, .carousel-item {
+      height: auto;
+  }
+  .contenedortext {
+      margin-bottom: 1rem;
+      order: 2;
+  }
+  .carousel-inner {
+      order: 3;
+  }
+  .titu {
+      order: 1;
+  }
+  .lead.text-responsive {
+      font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .lead.text-responsive {
+      font-size: 12px;
+  }
 }
 
-.product-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(210, 113, 28, 0.8);
-  color: #301600;
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+/* Footer */
+.footer {
+  background-color: #582c00;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.text-center-foot{
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .product-item:hover .product-info {
@@ -105,18 +141,107 @@ p{
       height: 300px;
     }
     }
-    @media (max-width: 550px) {
+  @media (max-width: 550px) {
       .p1{
         font-size: small;
-      }
-      }
-    footer {
-      overflow-x: hidden; 
-      background-color: #f5dccf; 
-      color: #ffffff; 
-      padding: 20px 0; 
-    }
+      }      
+  }
 
-    .footer-text {
-      text-align: center; 
-    }
+
+/*productos*/
+
+
+.product-img-container {
+  position: relative;
+  width: 200px; /* Tamaño deseado */
+  height: 200px; /* Tamaño deseado */
+  overflow: hidden;
+}
+
+.product-img-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Transición para el efecto de encojimiento */
+}
+
+.product-img-container:hover img {
+  transform: scale(0.95); /* Reducción del tamaño al pasar el cursor */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Para que los elementos se coloquen uno encima del otro */
+}
+
+.overlay-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px; /* Espacio entre el mensaje y el botón */
+  font-size: 15px;
+  font-family:'Times New Roman', Times, serif ;
+}
+
+.product-item:hover .overlay {
+  opacity: 1;
+}
+
+.stars {
+  color: rgb(183, 183, 183);
+  font-size: 24px;
+  margin-top: 10px;
+}
+/*reseñas*/
+@media (max-width: 767.98px) {
+  .histo .row {
+      flex-direction: column;
+      text-align: center;
+  }
+  .contenedortext, .carousel-inner, .carousel-item {
+      height: auto;
+  }
+  .contenedortext {
+      margin-bottom: 1rem;
+      order: 2;
+  }
+  .carousel-inner {
+      order: 3;
+  }
+  .titu {
+      order: 1;
+  }
+  .lead.text-responsive {
+      font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .lead.text-responsive {
+      font-size: 12px;
+  }
+}
+.card-text{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+.text-end{
+  font-size: small;
+  font-family: 'Times New Roman', Times, serif;
+}
+.card-body{
+  font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+  font-family: 'Times New Roman', Times, serif;
+}
+.card-body-coment{
+  color: #321900;
+  background-color: rgb(255, 208, 162);;
+}

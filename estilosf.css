@@ -1,0 +1,17 @@
+.formu{
+    width: 10px;
+}
+body {
+    background-color: rgb(114, 34, 189);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  footer {
+  overflow-x: hidden; 
+  background-color:  rgb(114, 34, 189); 
+  color: #ffffff; 
+  padding: 20px 0; 
+}
+
+.footer-text {
+  text-align: center; 
+}
